@@ -49,7 +49,7 @@ $(function() {
             data: $(this).serialize(),
             success: function(res) {
                 if (res.status !== 0) {
-                    return layer.msg(res.message)
+                    return layer.msg('登录失败！')
                 }
                 layer.msg('登录成功!')
                     // 将登录成功的token字符串，保存到localStorage中
